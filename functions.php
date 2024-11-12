@@ -92,3 +92,9 @@ function understrap_child_customize_controls_js() {
 	);
 }
 add_action( 'customize_controls_enqueue_scripts', 'understrap_child_customize_controls_js' );
+
+function understrap_child_remove_filter () {
+	remove_filter( 'wp_trim_excerpt', 'understrap_all_excerpts_get_more_link', 10 );
+}
+add_action('init', 'understrap_child_remove_filter');
+
