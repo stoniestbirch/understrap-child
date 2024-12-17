@@ -98,3 +98,15 @@ function understrap_child_remove_filter () {
 }
 add_action('init', 'understrap_child_remove_filter');
 
+// Add the custom loop for the homepage
+add_action('pre_get_posts', 'exclude_editorial_category_from_homepage');
+
+function exclude_editorial_category_from_homepage($query) {
+    // Ensure this runs only on the main query and the homepage
+    if ($query->is_home() && $query->is_main_query()) {
+        // Exclude the 'editorial' category by its slug
+        $query->set('category__not_in', array(get_cat_ID('editorial')));
+    }
+}
+
+

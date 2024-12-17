@@ -39,7 +39,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					</header><!-- .page-header -->
 					<?php
 					// Start the loop. ?>
-					<div class="row row-cols-lg-2">
+					<div class="row row-cols-lg-2 g-4">
 						<?php
 					while ( have_posts() ) {
 						the_post();

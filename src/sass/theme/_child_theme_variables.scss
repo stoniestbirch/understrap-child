@@ -3,5 +3,18 @@
 // Just copy a variable from src/sass/assets/bootstrap5/_variables.scss, paste it here and edit the value.
 
 
-$purple: #5533ff; // Thats a sample how you could change a BootStrap variable.
-$primary: $purple;  // Once we've changed the value, we'll also make it the primary brand color.
+//$purple: #0dcaf0; // #5533ff; // Thats a sample how you could change a BootStrap variable.
+//$primary: $purple;  // Once we've changed the value, we'll also make it the primary brand color.
+
+
+$line-height-base:            1.2 !default;
+$line-height-sm:              1 !default;
+$line-height-lg:              1.2 !default;
+
+$font-size-base: 1rem !default;
+
+$h1-font-size:                $font-size-base * 1.8 !default;
+$h2-font-size:                $font-size-base * 1.65 !default;
+$h3-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.35 !default;
+$h5-font-size:                $font-size-base * 1.2 !default;
