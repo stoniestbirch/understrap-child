@@ -82,7 +82,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 				?>
 				<p><a href="">More editorials &gt;&gt;</a></p>
 			</div><!-- #left-sidebar -->
-			<div class="col widget-area" id="main-content">			
+			<div class="col" id="main-content">	
+						
 				<?php
 				if ( have_posts() ) {
 					// Start the Loop.
@@ -110,6 +111,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					get_template_part( 'loop-templates/content', 'none' );
 				}
 				?>
+				
 			</div><!-- #main-content -->
 			</div>
 			</main>

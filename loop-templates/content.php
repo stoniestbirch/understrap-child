@@ -8,11 +8,9 @@
 // Exit if accessed directly.
 defined( 'ABSPATH' ) || exit;
 ?>
-<div class="col">
-<article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
-	
-	
+<article <?php post_class('col'); ?> id="post-<?php the_ID(); ?>">
 
+<div class="h-100 p-3 bg-info rounded-1">
 	<header class="entry-header">
 
 		<?php
@@ -58,8 +56,5 @@ defined( 'ABSPATH' ) || exit;
 
 	</footer><!-- .entry-footer -->
 		
-		
-	
-
+			</div>		
 </article><!-- #post-<?php the_ID(); ?> -->
-</div>

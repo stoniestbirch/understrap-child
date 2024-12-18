@@ -14980,13 +14980,14 @@ h2.entry-title a:hover, .entry-title.h2 a:hover {
   color: blue;
 }
 
-article.type-post {
-  padding-top: 0.5rem;
-  border-top: 1px solid grey;
-}
-
 #content {
   background-color: #f8f9fa;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.wrapper {
+  padding: 0.75rem 0;
 }
 
 .has-blue-color,
